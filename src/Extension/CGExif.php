@@ -615,7 +615,7 @@ final class CGExif extends CMSPlugin implements SubscriberInterface {
 			->join('LEFT',$db->qn('#__fields_values') .' AS v ON g.id = v.item_id') 
             ->where($db->qn('g.published') . ' = 1 AND ' . $db->qn('g.approved').' = 1')
 			->where($db->qn('v.item_id').' IS NULL')
-			->where('LOWER(RIGHT(g.filename,4)) IN ('.$db->q('jpg').','.$db->q('jpeg').','.$db->q('tiff').')'); 
+			->where('LOWER(RIGHT(g.filename,4)) IN ('.$db->q('.jpg').','.$db->q('jpeg').','.$db->q('tiff').')'); 
         $images = $db->setQuery($query)->loadObjectList();
 		return $images;
     }
