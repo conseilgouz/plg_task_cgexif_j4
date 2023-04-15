@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="4.1" type="plugin" group="task" method="upgrade">
+	<name>PLG_TASK_CGEXIF</name>
+	<author>conseilgouz</author>
+	<creationDate>2023/04/14</creationDate>
+	<copyright>Copyright (C) 2023 ConseilGouz. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>pascal.leconte@conseilgouz.com</authorEmail>
+	<authorUrl>www.conseilgouz.com</authorUrl>
+	<version>1.0.0</version>
+	<description>PLG_TASK_CGEXIF_DESC</description>
+	<files>
+		<folder plugin="cgexif">services</folder>
+		<folder>src</folder>		
+		<folder>forms</folder>		
+	</files>
+    <languages>
+		<language tag="fr-FR">language/fr-FR/plg_task_cgexif.ini</language>
+		<language tag="fr-FR">language/fr-FR/plg_task_cgexif.sys.ini</language>
+	</languages>
+	<scriptfile>script.php</scriptfile>	
+	<namespace path="src">ConseilGouz\Plugin\Task\CGExif</namespace>
+	<changelogurl>https://raw.githubusercontent.com/conseilgouz/plg_task_cgexif_j4/master/plg_task_cgexif_changelog.xml</changelogurl>
+    <updateservers>
+    <server type="extension" name="task CG Exif" priority="1">https://raw.githubusercontent.com/conseilgouz/updates_github/master/plg_task_cgexif_update.xml</server>
+    </updateservers>
+	
+</extension>

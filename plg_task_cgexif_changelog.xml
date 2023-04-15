@@ -1,0 +1,14 @@
+<changelogs>
+	<changelog>
+		<element>cgexif</element>
+		<type>plugin</type>
+		<group>task</group>
+		<version>1.0.0</version>
+        <note>
+            <item>14/04/2023</item>
+        </note>
+         <addition>
+            <item>First version</item>
+        </addition>
+	</changelog>
+</changelogs>
