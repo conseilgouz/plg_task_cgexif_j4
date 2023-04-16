@@ -2,12 +2,12 @@
 <extension version="4.1" type="plugin" group="task" method="upgrade">
 	<name>PLG_TASK_CGEXIF</name>
 	<author>conseilgouz</author>
-	<creationDate>2023/04/15</creationDate>
+	<creationDate>2023/04/16</creationDate>
 	<copyright>Copyright (C) 2023 ConseilGouz. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>pascal.leconte@conseilgouz.com</authorEmail>
 	<authorUrl>www.conseilgouz.com</authorUrl>
-	<version>1.0.1</version>
+	<version>1.0.2</version>
 	<description>PLG_TASK_CGEXIF_DESC</description>
 	<files>
 		<folder plugin="cgexif">services</folder>
