@@ -3,6 +3,18 @@
 		<element>cgexif</element>
 		<type>plugin</type>
 		<group>task</group>
+		<version>1.0.5</version>
+        <note>
+            <item>16/04/2023</item>
+        </note>
+         <fix>
+            <item>still missing one name in translation file</item>
+        </fix>
+	</changelog>
+	<changelog>
+		<element>cgexif</element>
+		<type>plugin</type>
+		<group>task</group>
 		<version>1.0.4</version>
         <note>
             <item>16/04/2023</item>
