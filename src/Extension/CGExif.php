@@ -595,7 +595,7 @@ final class CGExif extends CMSPlugin implements SubscriberInterface {
 					    $this->fields_per_names[$afield] = $this->createField($afield);
 					}
 					$field_id = $this->fields_per_names[$afield];
-					$model->setFieldValue($field_id,$id,$exif[$section][$name]);
+					$model->setFieldValue($field_id,$id,$exifValue);
 				}
 			}
 		} // end of foreach
