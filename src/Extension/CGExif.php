@@ -197,26 +197,26 @@ final class CGExif extends CMSPlugin implements SubscriberInterface {
 						case 'IsColor':
 							switch((int)$exif[$section][$name]) {
 								case 0:
-									$exifValue = Text::_('COM_PHOCAGALLERY_NO');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_NO');
 									break;
 								default:
-									$exifValue = Text::_('COM_PHOCAGALLERY_YES');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_YES');
 								break;
 							}
 							break;
 						case 'ResolutionUnit':
 							switch((int)$exif[$section][$name]) {
 								case 2:
-									$exifValue = Text::_('COM_PHOCAGALLERY_INCH');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_INCH');
 									break;
 								case 3:
-									$exifValue = Text::_('COM_PHOCAGALLERY_CM');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_CM');
 									break;
 								case 4:
-									$exifValue = Text::_('COM_PHOCAGALLERY_MM');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_MM');
 									break;
 								case 5:
-									$exifValue = Text::_('COM_PHOCAGALLERY_MICRO');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_MICRO');
 									break;
 								case 0:
 								case 1:
@@ -228,238 +228,238 @@ final class CGExif extends CMSPlugin implements SubscriberInterface {
 						case 'ExposureProgram':
 							switch((int)$exif[$section][$name]) {
 								case 1:
-									$exifValue = Text::_('COM_PHOCAGALLERY_MANUAL');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_MANUAL');
 									break;
 								case 2:
-									$exifValue = Text::_('COM_PHOCAGALLERY_NORMAL_PROGRAM');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_NORMAL_PROGRAM');
 									break;
 								case 3:
-									$exifValue = Text::_('COM_PHOCAGALLERY_APERTURE_PRIORITY');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_APERTURE_PRIORITY');
 									break;
 								case 4:
-									$exifValue = Text::_('COM_PHOCAGALLERY_SHUTTER_PRIORITY');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_SHUTTER_PRIORITY');
 									break;
 								case 5:
-									$exifValue = Text::_('COM_PHOCAGALLERY_CREATIVE_PROGRAM');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_CREATIVE_PROGRAM');
 									break;
 								case 6:
-									$exifValue = Text::_('COM_PHOCAGALLERY_ACTION_PROGRAM');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_ACTION_PROGRAM');
 									break;
 								case 7:
-									$exifValue = Text::_('COM_PHOCAGALLERY_PORTRAIT_MODE');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_PORTRAIT_MODE');
 									break;
 								case 8:
-									$exifValue = Text::_('COM_PHOCAGALLERY_LANDSCAPE_MODE');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_LANDSCAPE_MODE');
 									break;
 								case 0:
 								default:
-									$exifValue = Text::_('COM_PHOCAGALLERY_NOT_DEFINED');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_NOT_DEFINED');
 									break;
 							}
 							break;
 						case 'MeteringMode':
 							switch((int)$exif[$section][$name]) {
 								case 0:
-									$exifValue = Text::_('COM_PHOCAGALLERY_UNKNOWN');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_UNKNOWN');
 									break;
 								case 1:
-									$exifValue = Text::_('COM_PHOCAGALLERY_AVERAGE');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_AVERAGE');
 									break;
 								case 2:
-									$exifValue = Text::_('COM_PHOCAGALLERY_CENTERWEIGHTEDAVERAGE');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_CENTERWEIGHTEDAVERAGE');
 									break;
 								case 3:
-									$exifValue = Text::_('COM_PHOCAGALLERY_SPOT');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_SPOT');
 									break;
 								case 4:
-									$exifValue = Text::_('COM_PHOCAGALLERY_MULTISPOT');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_MULTISPOT');
 									break;
 								case 5:
-									$exifValue = Text::_('COM_PHOCAGALLERY_PATTERN');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_PATTERN');
 									break;
 								case 6:
-									$exifValue = Text::_('COM_PHOCAGALLERY_PARTIAL');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_PARTIAL');
 									break;
 								case 255:
 								default:
-									$exifValue = Text::_('COM_PHOCAGALLERY_OTHER');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_OTHER');
 									break;
 							}
 							break;
 						case 'LightSource':
 							switch((int)$exif[$section][$name]) {
 								case 0:
-									$exifValue = Text::_('COM_PHOCAGALLERY_UNKNOWN');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_UNKNOWN');
 									break;
 								case 1:
-									$exifValue = Text::_('COM_PHOCAGALLERY_DAYLIGHT');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_DAYLIGHT');
 									break;
 								case 2:
-									$exifValue = Text::_('COM_PHOCAGALLERY_FLUORESCENT');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_FLUORESCENT');
 									break;
 								case 3:
-									$exifValue = Text::_('COM_PHOCAGALLERY_TUNGSTEN');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_TUNGSTEN');
 									break;
 								case 4:
-									$exifValue = Text::_('COM_PHOCAGALLERY_FLASH');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_FLASH');
 									break;
 								case 9:
-									$exifValue = Text::_('COM_PHOCAGALLERY_FINEWEATHER');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_FINEWEATHER');
 									break;
 								case 10:
-									$exifValue = Text::_('COM_PHOCAGALLERY_CLOUDYWEATHER');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_CLOUDYWEATHER');
 									break;
 								case 11:
-									$exifValue = Text::_('COM_PHOCAGALLERY_SHADE');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_SHADE');
 									break;
 								case 12:
-									$exifValue = Text::_('COM_PHOCAGALLERY_DAYLIGHTFLUORESCENT');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_DAYLIGHTFLUORESCENT');
 									break;
 								case 13:
-									$exifValue = Text::_('COM_PHOCAGALLERY_DAYWHITEFLUORESCENT');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_DAYWHITEFLUORESCENT');
 									break;
 								case 14:
-									$exifValue = Text::_('COM_PHOCAGALLERY_COOLWHITEFLUORESCENT');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_COOLWHITEFLUORESCENT');
 									break;
 								case 15:
-									$exifValue = Text::_('COM_PHOCAGALLERY_WHITEFLUORESCENT');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_WHITEFLUORESCENT');
 									break;
 								case 17:
-									$exifValue = Text::_('COM_PHOCAGALLERY_STANDARDLIGHTA');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_STANDARDLIGHTA');
 									break;
 								case 18:
-									$exifValue = Text::_('COM_PHOCAGALLERY_STANDARDLIGHTB');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_STANDARDLIGHTB');
 									break;
 								case 19:
-									$exifValue = Text::_('COM_PHOCAGALLERY_STANDARDLIGHTC');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_STANDARDLIGHTC');
 									break;
 								case 20:
-									$exifValue = Text::_('COM_PHOCAGALLERY_D55');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_D55');
 									break;
 								case 21:
-									$exifValue = Text::_('COM_PHOCAGALLERY_D65');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_D65');
 									break;
 								case 22:
-									$exifValue = Text::_('COM_PHOCAGALLERY_D75');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_D75');
 									break;
 								case 23:
-									$exifValue = Text::_('COM_PHOCAGALLERY_D50');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_D50');
 									break;
 								case 24:
-									$exifValue = Text::_('COM_PHOCAGALLERY_ISOSTUDIOTUNGSTEN');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_ISOSTUDIOTUNGSTEN');
 									break;
 								case 255:
 								default:
-									$exifValue = Text::_('COM_PHOCAGALLERY_OTHERLIGHTSOURCE');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_OTHERLIGHTSOURCE');
 									break;
 							}
 							break;
 						case 'SensingMethod':
 							switch((int)$exif[$section][$name]) {
 								case 2:
-									$exifValue = Text::_('COM_PHOCAGALLERY_ONE-CHIP_COLOR_AREA_SENSOR');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_ONE-CHIP_COLOR_AREA_SENSOR');
 									break;
 								case 3:
-									$exifValue = Text::_('COM_PHOCAGALLERY_TWO-CHIP_COLOR_AREA_SENSOR');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_TWO-CHIP_COLOR_AREA_SENSOR');
 									break;
 								case 4:
-									$exifValue = Text::_('COM_PHOCAGALLERY_THREE-CHIP_COLOR_AREA_SENSOR');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_THREE-CHIP_COLOR_AREA_SENSOR');
 									break;
 								case 5:
-									$exifValue = Text::_('COM_PHOCAGALLERY_COLOR_SEQUENTIAL_AREA_SENSOR');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_COLOR_SEQUENTIAL_AREA_SENSOR');
 									break;
 								case 7:
-									$exifValue = Text::_('COM_PHOCAGALLERY_TRILINEAR_SENSOR');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_TRILINEAR_SENSOR');
 									break;
 								case 8:
-									$exifValue = Text::_('COM_PHOCAGALLERY_COLOR_SEQUENTIAL_LINEAR_SENSOR');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_COLOR_SEQUENTIAL_LINEAR_SENSOR');
 									break;
 								case 1:
 								default:
-									$exifValue = Text::_('COM_PHOCAGALLERY_NOT_DEFINED');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_NOT_DEFINED');
 									break;
 							}
 							break;
 						case 'CustomRendered':
 							switch((int)$exif[$section][$name]) {
 								case 1:
-									$exifValue = Text::_('COM_PHOCAGALLERY_CUSTOM_PROCESS');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_CUSTOM_PROCESS');
 									break;
 								case 0:
 								default:
-									$exifValue = Text::_('COM_PHOCAGALLERY_NORMAL_PROCESS');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_NORMAL_PROCESS');
 									break;
 							}
 							break;
 						case 'ExposureMode':
 							switch((int)$exif[$section][$name]) {
 								case 1:
-									$exifValue = Text::_('COM_PHOCAGALLERY_MANUAL_EXPOSURE');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_MANUAL_EXPOSURE');
 									break;
 								case 2:
-									$exifValue = Text::_('COM_PHOCAGALLERY_AUTO_BRACKET');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_AUTO_BRACKET');
 									break;
 								case 0:
 								default:
-									$exifValue = Text::_('COM_PHOCAGALLERY_AUTO_EXPOSURE');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_AUTO_EXPOSURE');
 									break;
 							}
 							break;
 						case 'WhiteBalance':
 							switch((int)$exif[$section][$name]) {
 								case 1:
-									$exifValue = Text::_('COM_PHOCAGALLERY_MANUAL_WHITE_BALANCE');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_MANUAL_WHITE_BALANCE');
 									break;
 								case 0:
 								default:
-									$exifValue = Text::_('COM_PHOCAGALLERY_AUTO_WHITE_BALANCE');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_AUTO_WHITE_BALANCE');
 									break;
 							}
 							break;
 						case 'SceneCaptureType':
 							switch((int)$exif[$section][$name]) {
 								case 1:
-									$exifValue = Text::_('COM_PHOCAGALLERY_LANDSCAPE');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_LANDSCAPE');
 									break;
 								case 2:
-									$exifValue = Text::_('COM_PHOCAGALLERY_PORTRAIT');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_PORTRAIT');
 									break;
 								case 3:
-									$exifValue = Text::_('COM_PHOCAGALLERY_NIGHT_SCENE');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_NIGHT_SCENE');
 									break;
 								case 0:
 								default:
-									$exifValue = Text::_('COM_PHOCAGALLERY_STANDARD');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_STANDARD');
 									break;
 							}
 							break;
 						case 'GainControl':
 							switch((int)$exif[$section][$name]) {
 								case 1:
-									$exifValue = Text::_('COM_PHOCAGALLERY_LOW_GAIN_UP');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_LOW_GAIN_UP');
 									break;
 								case 2:
-									$exifValue = Text::_('COM_PHOCAGALLERY_HIGH_GAIN_UP');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_HIGH_GAIN_UP');
 									break;
 								case 3:
-									$exifValue = Text::_('COM_PHOCAGALLERY_LOW_GAIN_UP');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_LOW_GAIN_UP');
 									break;
 								case 4:
-									$exifValue = Text::_('COM_PHOCAGALLERY_HIGH_GAIN_UP');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_HIGH_GAIN_UP');
 									break;
 								case 0:
 								default:
-									$exifValue = Text::_('COM_PHOCAGALLERY_NONE');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_NONE');
 									break;
 							}
 							break;
 						case 'ColorSpace':
 							switch((int)$exif[$section][$name]) {
 								case 1:
-									$exifValue = Text::_('COM_PHOCAGALLERY_SRGB');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_SRGB');
 									break;
 								case 'FFFF.H':
-									$exifValue = Text::_('COM_PHOCAGALLERY_UNCALIBRATED');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_UNCALIBRATED');
 									break;
 								case 0:
 								default:
@@ -471,45 +471,45 @@ final class CGExif extends CMSPlugin implements SubscriberInterface {
 						case 'Sharpness':
 							switch((int)$exif[$section][$name]) {
 								case 1:
-									$exifValue = Text::_('COM_PHOCAGALLERY_SOFT');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_SOFT');
 									break;
 								case 2:
-									$exifValue = Text::_('COM_PHOCAGALLERY_HARD');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_HARD');
 									break;
 								case 0:
 								default:
-									$exifValue = Text::_('COM_PHOCAGALLERY_NORMAL');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_NORMAL');
 									break;
 							}
 							break;
 						case 'Saturation':
 							switch((int)$exif[$section][$name]) {
 								case 1:
-									$exifValue = Text::_('COM_PHOCAGALLERY_LOW_SATURATION');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_LOW_SATURATION');
 									break;
 								case 2:
-									$exifValue = Text::_('COM_PHOCAGALLERY_HIGH_SATURATION');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_HIGH_SATURATION');
 									break;
 								case 0:
 								default:
-									$exifValue = Text::_('COM_PHOCAGALLERY_NORMAL');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_NORMAL');
 									break;
 							}
 							break;
 						case 'SubjectDistanceRange':
 							switch((int)$exif[$section][$name]) {
 								case 1:
-									$exifValue = Text::_('COM_PHOCAGALLERY_MACRO');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_MACRO');
 									break;
 								case 2:
-									$exifValue = Text::_('COM_PHOCAGALLERY_CLOSE_VIEW');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_CLOSE_VIEW');
 									break;
 								case 3:
-									$exifValue = Text::_('COM_PHOCAGALLERY_DISTANT_VIEW');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_DISTANT_VIEW');
 									break;
 								case 0:
 								default:
-									$exifValue = Text::_('COM_PHOCAGALLERY_UNKNOWN');
+									$exifValue = Text::_('PLG_TASK_CGEXIF_UNKNOWN');
 									break;
 							}
 							break;
