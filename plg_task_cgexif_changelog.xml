@@ -3,6 +3,18 @@
 		<element>cgexif</element>
 		<type>plugin</type>
 		<group>task</group>
+		<version>1.0.9</version>
+        <note>
+            <item>23/04/2023</item>
+        </note>
+         <fix>
+            <item>suppress Notice: Only variables should be passed by reference...</item>
+        </fix>
+	</changelog>
+	<changelog>
+		<element>cgexif</element>
+		<type>plugin</type>
+		<group>task</group>
 		<version>1.0.8</version>
         <note>
             <item>20/04/2023</item>

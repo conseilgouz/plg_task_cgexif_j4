@@ -1,7 +1,6 @@
 <?php
 /** CG Exif
- * Version			: 1.0.0
- * Package			: Joomla 4.1
+ * Version			: 1.0.9
  * copyright 		: Copyright (C) 2023 ConseilGouz. All rights reserved.
  * license    		: http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
  *
@@ -19,6 +18,7 @@ use Joomla\Component\Scheduler\Administrator\Event\ExecuteTaskEvent;
 use Joomla\Component\Scheduler\Administrator\Task\Status as TaskStatus;
 use Joomla\Component\Scheduler\Administrator\Traits\TaskPluginTrait;
 use Joomla\Event\SubscriberInterface;
+use Joomla\Event\DispatcherInterface;
 use Joomla\Component\Fields\Administrator\Table\FieldTable;
 use Joomla\Component\Fields\Administrator\Model\FieldModel;
 
@@ -98,7 +98,20 @@ final class CGExif extends CMSPlugin implements SubscriberInterface {
             'onContentPrepareForm' => 'enhanceTaskItemForm',
         ];
     }
-    
+     /**
+     * Constructor.
+     *
+     * @param   DispatcherInterface  $dispatcher  The dispatcher
+     * @param   array                $config      An optional associative array of configuration settings
+     *
+     * @since   4.2.0
+     */
+    public function __construct(DispatcherInterface $dispatcher, array $config)
+    {
+        parent::__construct($dispatcher, $config);
+
+    }
+
     private function cgexif(ExecuteTaskEvent $event): int {
        if (!ComponentHelper::isEnabled('com_phocagallery', true)) {
             $this->logTask(Text::_('PLG_TASK_CGEXIF_NO_PHOCA'));
