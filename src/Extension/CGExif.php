@@ -138,6 +138,7 @@ final class CGExif extends CMSPlugin implements SubscriberInterface {
 		require_once JPATH_ADMINISTRATOR . '/components/com_phocagallery/libraries/autoloadPhoca.php';
 		phocagalleryimport('phocagallery.path.path');
 		phocagalleryimport('phocagallery.file.file');
+		phocagalleryimport('phocagallery.image.image');
 		$lang = Factory::getLanguage();
 		$lang->load('com_phocagallery');
 		$images = $this->getImages();
@@ -150,7 +151,13 @@ final class CGExif extends CMSPlugin implements SubscriberInterface {
 		$duration = microtime(true);
 		foreach ($images as $image) {
 		    $value = '';
-            $originalFile = \PhocaGalleryFile::getFileOriginal($image->filename);
+			$originalFile = '';
+			$extImage = \PhocaGalleryImage::isExtImage($image->extid);
+			if ($extImage && isset($image->exto) && $image->exto != '') {
+				$originalFile = $image->exto;
+			} else {
+			   $originalFile = \PhocaGalleryFile::getFileOriginal($image->filename);
+			}
             if (!$this->get_exif($image->id,$originalFile)) $ignored++;
 		    $processingTime = round(microtime(true) - $this->qtime, 3);
 		    $skip  = !($processingTime >= $this->minimumBatchProcessingTime);
@@ -166,7 +173,8 @@ final class CGExif extends CMSPlugin implements SubscriberInterface {
     }
 	/* From components/com_phocagallery/views/info/view.html.php */
 	private function get_exif($id,$originalFile) {
-
+		if ($originalFile == '') // image not found
+			return false;
 		$exif = @exif_read_data( $originalFile, 'IFD0');
 		if ($exif === false) {
 			return false;
